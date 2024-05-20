@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--flask path <link rel="stylesheet" href="{{url_for('static',filename='stylee.css')}}"> -->
+    <link rel="stylesheet" href="/static/stylee.css">
+     <title>Car Loan Annuity Prediction</title>
+ 
+</head>
+<body>
+
+    <h1>Car Loan Annuity Prediction</h1>
+
+ </div>
+ <!--include method="post" in flask for form
+       action ="/submit"-->
+ <form action="/templates/result.html" >
+    <h3>Fill the details :</h3>
+    
+    <label for="Client_ID">CLIENT ID:</label>
+    <input type="text" id="Client_ID"  name="Client_ID" placeholder="ID" required><br><br>
+        
+
+    <label for="Client_Income">CLIENT INCOME:</label>
+    <input type="text" id="Client_Income"name="Client_Income" required><br><br>
+
+
+    <label for="Car_Owned">CAR OWNED:</label>
+    <input type="text" id="Car_Owned"name="Car_Owned" required><br><br>
+
+
+    <label for="Bike_Owned">BIKE OWNED:</label>
+    <input type="text" id="Bike_Owned"name="Bike_Owned" required><br><br>
+
+
+    <label for="Active_Loan">ACTIVE LOAN:</label>
+    <input type="text" id="Active_Loan" name="Active_Loan" required><br><br>
+
+
+    <label for="Credit_Amount">CREDIT AMOUNT:</label>
+    <input type="text" id="Credit_Amount" name="Credit_Amount" required><br><br>
+
+
+    <label for="Loan_Annuity">LOAN ANNUITY:</label>
+    <input type="text" id="Loan_Annuity" name="Loan_Annuity" required><br><br>
+
+    <label for="client_income_type">CLIENT INCOME TYPE:</label>
+    <input type="text" id="client_income_type" name="client_income_type" required><br><br>
+
+    <label for="client_education">CLIENT EDUCATION:</label>
+    <input type="text" id="client_education" name="client_education" required><br><br>
+
+    <label for="client_marital_status">CLIENT MARITAL STATUS:</label>
+    <input type="text" id="client_marital_status" name="client_marital_status" required><br><br>
+
+    <label for="client_gender">CLIENT GENDER:</label>
+    <input type="text" id="client_gender" name="client_gender"required><br><br>
+
+    <label for="loan_contract_type">LOAN CONTRACT TYPE:</label>
+    <input type="text" id="loan_contract_type" name="loan_contract_type"required><br><br>
+
+    <label for="client_occupation">CLIENT OCCUPATION:</label>
+    <input type="text" id="client_occupation" name="client_occupation"required><br><br>
+
+    <label for="type_organization">TYPE ORGANIZATION:</label>
+    <input type="text" id="type_organization" name="type_organization"required><br><br>
+
+    <button type="submit" class="submit-button" value="submit">Predict Default</button>
+   
+    </form>
+<!--sample input:
+    [[12138936, 20250,1,0,1,15282, 1826,5,0,1,1,0,18,11]] -false
+    [[12214557,13500,0,1,1,30234,1840,1,4,1,1,0,8,5]]  -true    -->
+    <fotter>
+       
+    <p>Details of Car Loans and Rules:</p>
+    <p>Car loans are a type of financial assistance provided for the purchase of vehicles. Here are some rules and requirements:</p>
+    <ul>
+        <li>Minimum Client Income is required for approval.</li>
+        <li>Active Loan and Credit Amount are factors that influence eligibility.</li>
+        <li>Client's education and occupation may also impact the loan approval.</li>
+    </ul>
+    </fotter>
+  
+</body>
+</html>
